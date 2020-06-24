@@ -140,10 +140,30 @@ a{
 	background-color: #7ad66c;
 	border: none;
 	border-radius: 30px;
-
 	color: #fff;
+	overflow: hidden;
+
+	position: relative;
 
 	cursor: pointer;
+}
+
+.pulse{
+	background-color: #7ad66c;
+	border-radius: 50%;
+
+	position: absolute;
+
+	animation: pulse 0.7s ease-out;
+	transform: scale(0);
+}
+
+@keyframes pulse {
+	to {
+		transform: scale(2);
+		background-color: #fff;
+		opacity: 0;
+	}
 }
 
 .btn__big{
@@ -620,7 +640,7 @@ a{
 /*   Media
 ===================*/
 
-@media (max-width: 1200px){  /*ноутбук*/
+@media (max-width: 1280px){  /*ноутбук*/
 	
 }
 
